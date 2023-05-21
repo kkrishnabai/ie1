@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script >
+   function myFunction()
+{
+
+var password = window.prompt("Enter your password","");
+if (password.localeCompare("mygod"))
+{alert("REGISTER");
+}
+
+else {window.open("https://www.geeksforgeeks.org", "_blank");
+
+}
+
+}
+
+</script> 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+    box-sizing: border-box
+}
+.image-slideshow {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+img {
+  width: 100%
+}
+.fade {
+  animation-name: fade;
+  animation-duration: 2s;
+}
+@keyframes fade {
+  from {opacity: .5}
+  to {opacity: 1}
+}
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+background-color:
+darkslateblue;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color:
+darkslateblue;
+  text-color:white;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color:darkslateblue;
+  color: white;
+}
+
+.topnav-right {
+  float: right;
+}
+@import "compass/css3";
+
+@import "compass/css3";
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700,900);
+
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body{
+  background-color:  background-color:
+darkslateblue;
+  background-repeat: no-repeat;
+  @include filter-gradient(#53455b, #201e22, horizontal);
+  @include background-image(radial-gradient(circle at top,  rgba(83,69,91,1) 0,rgba(32,30,34,1) 70%));
+  color: #fff;
+  font-family: 'Lato', sans-serif;
+  font-size: 100%;
+  min-height: 100%;
+  line-height: 1.5;
+  padding: 2.5em 0;
+}
+.container {
+  margin: 0 auto;
+  width: 90%;
+  max-width: 1200px;
+}
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.grid-1-5 {
+  border: 2px solid #5d4e65;   
+  min-height: 400px;
+  padding: 1.25em;
+  position: relative;
+  text-align: center;
+  transition: all .2s ease-in-out;
+  
+  @media screen and (min-width: 700px) {
+    & {
+      float: left;
+      width: 50%;
+    }
+    &:nth-child(odd) {
+      clear: left;
+    }
+  }
+  
+  @media screen and (min-width: 800px) {
+    & {      
+      width: 33.3333333%;
+    }
+    &:nth-child(3n+1) {
+      clear: left;
+    }
+    &:nth-child(odd) {
+      clear: none;
+    }    
+  }
+  
+  @media screen and (min-width: 1120px) {
+    & {
+       width: 20%;
+    }
+    &:nth-child(odd), &:nth-child(3n+1) {
+       clear: none;
+    }    
+  }
+  
+}
+.grid-1-5:hover {
+  background-color: rgb(83,69,91);
+  @include filter-gradient(#53455b, #201d22, vertical);
+  @include background-image(linear-gradient(top,  rgba(83,69,91,1) 0%,rgba(32,29,34,1) 100%));  
+  border-top: 2px solid #ec7a37;
+  border-bottom: 2px solid #ff4f69;
+  box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 1);
+  transform: scale(1.025);
+  z-index: 2;
+
+  &:before, &:after {
+    content: ""; 
+    position: absolute; 
+    background-color: rgb(246,125,53);
+    @include filter-gradient(#f67d35, #ff4f68, vertical);
+    @include background-image(linear-gradient(top,  rgba(246,125,53,1) 0%,rgba(255,79,104,1) 100%));
+    top: -2px; 
+    bottom: -2px; 
+    width: 2px;    
+  }
+
+  &:before { 
+    left: -2px; 
+  }
+  &:after { 
+    right: -2px; 
+  }  
+
+  & .button {
+    background-color: rgb(238,122,54);
+    @include filter-gradient(#ee7a36, #eb495d, horizontal);
+    @include background-image(linear-gradient(left,  rgba(238,122,54,1) 0%,rgba(235,73,93,1) 100%));    
+  }
+}
+h2, h3, p, ul {
+  margin: 0
+}
+h2 {
+  font-size: 1em;
+  font-weight: 400;
+  margin: 0 0 0.5em;
+}
+h3 {
+  font-size: 1.5em;
+  letter-spacing: 0.0625em;
+  margin: 0 0 0.3333333333333333em;
+}
+p {
+  font-size: 0.875em;  
+}
+p, ul {
+  margin:0 0 1.5em
+}
+ul {
+  color: #796583;
+  font-size: 0.75em;
+  list-style-type: none;
+  padding: 0;
+
+  li {
+    margin: 0 0 0.8333333333333333em;
+  }
+}
+.button {
+  background-color: #9c83aa;
+  border-radius: 20px;
+  color: #fff;
+  font-size: 1em;
+  font-weight: 700;
+  padding: 0.75em 1.5em;
+  position: absolute;
+  bottom: 1.25em;
+  left: 50%;
+  margin-left: -60px;
+  text-decoration: none;
+  width: 120px;
+}
+.uppercase, .button, h2 {
+  text-transform: uppercase;
+}
+sup, .small {
+  font-size: 0.6125em;
+}
+h1 {
+  font-size: 50px;
+   text-align: center;
+  font-weight: 450;
+ 
+  color: white;
+  background-clip: text;
+  webkit-background-clip: text;
+}
+
+</style>
+ 
+</head>
+<body>
+
+<div class="topnav">
+  <a class="active"  href="index.html"  style="font-size: 40px;"><B>INTMAT EDTECH<B></a>
+  
+  <div class="topnav-right">
+    <a href="index.html">Home</a>
+<a href="aboutus.html">About</a>
+   
+
+<a href="yg.html">Vedio Gallery</a>
+
+  <a href="contactus.html">Contact</a>
+  </div>
+</div>
+<h1> OUR SERVICES</h1>
+
+	<div class="container group">
+		<div class="grid-1-5">
+			
+                          <img src="img/ce.jpg" alt="HTML tutorial" style="width:200px;height:200px; display: block;
+  margin-left: auto;
+  margin-right: auto;">
+			  <br> 
+
+			<ul>
+				
+				<li>IBPS,SBI,LIC</li>
+				<li>SSC CGL</li>
+                                <li>NDA</li>
+                            <li>RRB</li>
+                                   
+
+			</ul>
+			<a href="" onclick="myFunction();" class="button">Details</a>
+		</div>
+		<div class="grid-1-5">
+			
+<img src="img/crt.jpg" alt="HTML tutorial" style="width:200px;height:200px; display: block;
+  margin-left: auto;
+  margin-right: auto;">
+			
+			<ul>
+				<li>Quantitative Aptitude & Logical Reasoning</li>
+				<li>Technical </li>
+				<li>Verbal Skills</li>
+<li>Soft Skills</li>
+
+			</ul>		
+			<a href="" class="button">Details</a>	
+		</div>
+		<div class="grid-1-5">
+			
+<img src="img/mee.jpg" alt="HTML tutorial" style="width:200px;height:200px; display: block;
+  margin-left: auto;
+  margin-right: auto;">
+			
+			<ul>
+				<li>K-CET</li>
+				<li>JEE-Mains,Advanced</li>
+				<li>NEET</li>
+			</ul>	
+			<a href="" class="button">Details</a>		
+		</div>
+		<div class="grid-1-5">
+			
+<img src="img/ee.jpg" alt="HTML tutorial" style="width:200px;height:200px; display: block;
+  margin-left: auto;
+  margin-right: auto;">
+			
+			<ul>
+
+				<li>CAT</li>
+				<li>GRE,GMAT</li>
+				<li>GATE,PGCET</li>
+			</ul>	
+			<a href="" class="button">Details</a>		
+		</div>
+		<div class="grid-1-5">
+			
+<img src="img/sk.jpg" alt="HTML tutorial" style="width:200px;height:200px; display: block;
+  margin-left: auto;
+  margin-right: auto;">
+			
+			<ul>
+				<li>Programming Languages</li>
+				<li>AI,ML</li>
+				<li>Data Analysis & Science</li>
+				<li>Mobile and Web App Development</li>
+			</ul>
+			<a href="" class="button">Details</a>
+		</div>		
+	</div>
+
+</body>
+</html>
